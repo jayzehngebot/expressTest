@@ -7,7 +7,6 @@ app.configure(function(){
 	app.use(express.bodyParser());
 });
 
-
 app.get("/", function(req,res) {
 	res.render("home.jade");
 });
