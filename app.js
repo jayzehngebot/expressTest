@@ -5,6 +5,7 @@ var app = express();
 app.configure(function(){
 	app.set('port', process.env.PORT || 3000);
 	app.use(express.bodyParser());
+	app.use(express.static(__dirname+'/public'));
 });
 
 app.get("/", function(req,res) {
